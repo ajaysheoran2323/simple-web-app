@@ -23,7 +23,6 @@ pipeline {
           kubernetesDeploy(kubeconfigId: 'rancher',
           configs: 'k8s-deploy.yml',
           enableConfigSubstitution: false,
-          secretNamespace: 'devx',
           dockerCredentials: [
             [credentialsId: 'dockerhub', url: '']
           ]
