@@ -21,10 +21,15 @@ pipeline {
       steps {
         script {
           kubernetesDeploy(kubeconfigId: 'rancher',
-          configs: 'k8s-deploy.yml',
-          enableConfigSubstitution: false,
-          dockerCredentials:  [credentialsId: 'dockerhub']
 
+          configs: 'k8s-deploy.yml', // REQUIRED
+          enableConfigSubstitution: false,
+
+          secretNamespace: 'devx',
+          secretName: 'devx',
+          dockerCredentials: [
+            [credentialsId: 'dockerhub']
+          ]
         )
       }
 
