@@ -24,7 +24,6 @@ pipeline {
           configs: 'k8s-deploy.yml',
           enableConfigSubstitution: false,
           secretNamespace: 'devx',
-          secretName: 'devx',
           dockerCredentials: [
             [credentialsId: 'dockerhub', url: '']
           ]
