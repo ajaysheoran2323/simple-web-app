@@ -21,6 +21,7 @@ pipeline {
       steps {
         script {
           kubernetesDeploy(kubeconfigId: 'rancher',
+          kubeConfig: [path: '/var/lib/jenkins/workspace/.kube/rancher'],
           configs: 'k8s-deploy.yml',
           enableConfigSubstitution: false,
           dockerCredentials: [
