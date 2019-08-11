@@ -24,7 +24,7 @@ pipeline {
           configs: 'k8s-deploy.yml',
           enableConfigSubstitution: false,
           dockerCredentials: [
-            [credentialsId: 'dockerhub', url: '']
+            [credentialsId: 'dockerhub', url: 'https://registry.hub.docker.com']
           ]
         )
       }
