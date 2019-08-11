@@ -24,7 +24,7 @@ spec:
         workload.user.cattle.io/workloadselector: deployment-devx-myapp
     spec:
       containers:
-      - image: ajaysheoran2323/mynewimage:latest
+      - image: ajaysheoran2323/mynewimage:$BUILD_NUMBER
         imagePullPolicy: Always
         name: myapp
         ports:
