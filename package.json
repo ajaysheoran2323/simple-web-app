@@ -1,0 +1,22 @@
+{
+  "name": "cicd",
+  "version": "1.0.0",
+  "description": "A simple example node app that listens on port 80 and serves a demo file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Demo test passed!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onexdata/simple-web-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onexdata/simple-web-app/issues"
+  },
+  "homepage": "https://github.com/onexdata/simple-web-app#readme",
+  "dependencies": {
+    "usws": "^1.0.3"
+  }
+}
