@@ -2,7 +2,6 @@
 A simple example node app that listens on port 80 and serves a demo file
 
 
-new branch added
 
 ## CI/CD
 * Listen to a github hook when a commit to master is made.
