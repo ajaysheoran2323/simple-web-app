@@ -7,6 +7,9 @@ trigger:
   branches:
     include:
       - develop
+    exclude:
+      - master
+      - staging
 pool:
   vmImage: 'ubuntu-latest'
 
