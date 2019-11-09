@@ -5,7 +5,6 @@ ARG NPM_TOKEN
 
 RUN mkdir /gate
 WORKDIR /gate
-
 COPY package.json .
 COPY package-lock.json .
 
