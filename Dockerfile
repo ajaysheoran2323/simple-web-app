@@ -12,4 +12,4 @@ RUN apk --update add --no-cache bash && \
   echo "Finished npm install"
 
 COPY . .
-CMD ["npm", "start"]
+CMD ["npm", "start"] 
