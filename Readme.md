@@ -1,6 +1,4 @@
 
-
-## CI/CD
 * Listen to a github hook when a commit to master is made.
 * Run "npm run test"
 * If passed, run "npm run build"
