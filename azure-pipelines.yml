@@ -6,11 +6,6 @@
 trigger:
   branches:
     include:
-      - staging
-    exclude:
-      - master
-      - develop
-
 pool:
   vmImage: 'ubuntu-latest'
 
