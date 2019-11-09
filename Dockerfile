@@ -2,7 +2,6 @@ FROM node:8-alpine
 
 ENV NODE_ENV=production
 ARG NPM_TOKEN
-
 RUN mkdir /gate
 WORKDIR /gate
 COPY package.json .
